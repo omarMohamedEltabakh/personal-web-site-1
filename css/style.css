@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* START GLOBAL ATTRIBUTE */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+/* END GLOBAL ATTRIBUTE */
+
+
+/* START HEADER */
+header{
+    background-color: #f0f0f0;
+    width: 100%;
+    position: fixed;
+    z-index:1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px;
+}
+
+header .logo{
+    text-decoration: none;
+    color: #3a6cf4;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8em;
+}
+
+header .navigation a{
+    color: #3a6cf4;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding-left: 30px;
+}
+
+.navigation a:hover{
+    color: #601cfc;
+}
+
+/* END HEADER */
+
+
+
+
+
+
+
+/* START SECTION1 */
+section{
+    padding: 100px 200px;
+}
+
+.main{
+    width: 100%;
+    min-height: 100vh;
+    background-color: gold;
+    display: flex;
+    align-items: center;
+    background:url(../imges/home2.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.main h2{
+    font-size: 1.4em;
+    font-weight: 600;
+
+}
+.main h2 span{
+    display: inline-block;
+    color: blue;
+    font-size: 2em;
+    font-weight: 600;
+    margin-top: 10px;
+}
+.main h3{
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.main-btn{
+    text-decoration: none;
+    color: inherit;
+    font-weight: 600; 
+    font-size: 1.1em;
+    background-color:#3a6cf4;
+    display: inline-block;
+    padding: 0.9375em 2.1875em;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    transition: .7s ease;
+}
+
+.main-btn:hover{
+    background-color: #0a49f6;
+    transform: scale(1.1);
+    font-weight: 700;
+}
+.social-icons a{
+    color: inherit;
+    font-size: 1.7em;
+    padding-right: 30px;
+    transition: .4s;
+}
+.social-icons a:hover{
+    color:#ff0000;
+}
+/* END SECTION1 */
+
+
+
+
+
+
+
+
+/* START SECTIION2 */
+
+.title{
+    display: flex;
+    justify-content: center;
+    color: blue;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.card{
+    background-color: white;
+    width: 18em;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 15% );
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: .7s ease;
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
+
+.icon{
+    color: blue;
+    font-size: 8em;
+    text-align: center;
+}
+.card .info{
+    text-align: center;
+
+}
+.card .info h3{
+    color: blue;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 10px;
+}
+
+/* END SECTIION2 */
+
+
+/*START SECTION3 */
+
+.project{
+    background-color: #000016;
+}
+.project-content{
+    margin-top: 30px;
+}
+
+.project-card{
+    background-color: white;
+    border:1px solid white;
+    min-height: 14em;
+    width:17em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px;
+    transition: 0.7s ease;
+}
+.project-card:hover{
+    transform: scale(1.1);
+}
+
+.project-imge img{
+    width: 100%;
+    height: 300px;
+}
+
+.project-card:hover .project-imge{
+    opacity: 0.9;
+}
+
+.project-info .project-title{
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 10px;
+ 
+}
+.project-info .project-title a{
+    text-decoration: none;
+    transition: .4s;
+    color: blue;
+}
+.project-info .project-title a:hover{
+    color: red;
+}
+
+.project-info{
+    padding: 1em;
+}
+
+.project-category{
+    font-size: 0.8em;
+}
+
+/*END SECTION3 */
+
+
+/* START CONTACT */
+.resize{
+    width: 15em;
+}
+.resize .icon{
+    font-size:4em;
+}
+.contact{
+    justify-content: center;
+
+}
+/* END CONTACT */
+
+
+
+
+
+
+
+
+/* START FOOTER */
+
+.footer{
+    background-color: #000016;
+    color: white;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-title{
+    font-size: 1.3em;
+    font-weight: 600;
+}
+.footer-title span{
+    color: blue;
+}
+
+/* END FOOTER */
+
